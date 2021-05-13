@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios Javascript</title>
+</head>
+<body>
+    
+    <h1>Ejercicios Javascript</h1>
+
+     <!-- 12/05/2021 -->
+
+    <script>
+    
+        let str1 = "Buenos dias mi nombre es";
+        let str2 = "Nicola Gasparro y me gusta javascript";
+        let result = "61";
+        let string = "Hey Tu, como te llamas. ¡Hey estoy hablando contigo!";
+
+        console.log(str1.length + str2.length);
+        console.log(typeof (str1.length + str2.length));
+        
+        console.log(str1 + " " + str2 + " " + "y la suma de los caracteres de este texto es" + " " + result);
+        
+        console.log(10 + "1")
+        console.log(typeof (10 + "1"))
+        console.log(10 - "1")
+        console.log(typeof (10 - "1"))
+        
+        console.log(string)
+        console.log(string.replace('contigo', 'el'))
+
+    </script>
+
+
+     <!-- 13/05/2021 -->
+
+    <script>
+
+    /* EASY */
+        
+        /* Ejercicio 1 */
+
+        function calcularArea(){
+            
+            for (let i = 1; i <= 10; i++) {
+                let area = Math.PI*i**2;
+                console.log(area);
+            }
+        }
+        calcularArea();
+
+        /* function calcularArea(){
+            
+            for (let i = 0; i < 10; i++) {
+                
+                let area = Math.Pi * Math.pow(i,2);
+                console.log(area);
+            }
+        }
+        calcularArea(); */
+
+        /* Ejercicio 2 */
+
+        let n = 10;
+        let suma = 0;
+
+        for (let i = 0; i <=n; i++){
+            suma += i;  /* suma=suma+1; */
+        }
+        console.log(`la suma de los primeros 10 numeros es ${suma}`)
+
+        /* Ejercicio 3 */
+
+        function comprobarNumero(){
+
+            let numero = 0;
+            numero = prompt('Introduce el número:');
+
+            if(numero % 2 == 0){
+            console.log(`El número ${numero} es par`);
+            }else{
+            console.log(`El número ${numero} es impar`);
+            }   
+        }
+        /* comprobarNumero(); */  /* <--DESCOMENTAR PARA QUE SALGA EL PROMPT */
+
+    /* MEDIUM */
+
+        /* Ejercicio 1 */
+
+        for (let i = 0; i <=10; i+=2){
+            console.log(i);
+        }
+
+        /* Ejercicio 2 */
+
+        function obtenerNumeroAleatorio(min,max){
+
+            let result = Math.round(Math.random() * (max - min) + min);
+            console.log(result); 
+            return result;  
+        }
+
+        obtenerNumeroAleatorio(1,10);
+
+            /* Ejercicio 3 */
+            
+
+
+
+
+
+
+
+    </script>
+
+</body>
+</html>
